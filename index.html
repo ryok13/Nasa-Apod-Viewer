@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA APOD Viewer</title>
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet"/>
-	<script src="js/script.js" defer></script>
-</head>
-<body>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+    </head>
+    <body>
     <header>
         <h1>NASA Astronomy Picture of the Day</h1>
         <p>Explore the cosmos through NASA's APOD API</p>
@@ -16,24 +16,33 @@
 
     <main>
         <section class="controls">
-        <!-- ① 今日の画像 -->
+        <!-- Load today's image -->
         <button id="loadToday">🔭 Load Today’s Image</button>
 
-        <!-- ② 過去の日付で検索 -->
+        <!-- ② Search by specific date -->
         <div class="date-search">
             <input type="date" id="dateInput" />
             <button id="loadByDate">📅 Search by Date</button>
         </div>
 
-        <!-- ③ ランダム取得 -->
+        <!-- Get random images -->
         <div class="random-search">
             <label for="randomCount">🔀 Random Images:</label>
             <input type="number" id="randomCount" min="1" max="10" value="3" />
             <button id="loadRandom">Get Random</button>
         </div>
+
+        <!-- Search by date range -->
+        <div class="range-search">
+            <label for="startDate">📆 Start Date:</label>
+            <input type="date" id="startDate" />
+            <label for="endDate">🗓️ End Date:</label>
+            <input type="date" id="endDate" />
+            <button id="loadByRange">📂 Search by Date Range</button>
+        </div>
         </section>
 
-        <!-- 画像・説明出力用 -->
+        <!-- Output area -->
         <section id="output"></section>
     </main>
 
