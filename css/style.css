@@ -149,3 +149,9 @@ footer a {
 .range-search button:hover {
     background-color: #66fcf1;
 }
+
+.error {
+    text-align: center;
+    color: #ff4c4c;
+    font-weight: bold;
+}

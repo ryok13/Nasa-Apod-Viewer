@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA APOD Viewer</title>
+    <link rel="icon" href="images/nasa-logo.png" type="image/png" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/script.js" defer></script>
-    </head>
-    <body>
+</head>
+<body>
     <header>
         <h1>NASA Astronomy Picture of the Day</h1>
         <p>Explore the cosmos through NASA's APOD API</p>
@@ -19,7 +20,7 @@
         <!-- Load today's image -->
         <button id="loadToday">🔭 Load Today’s Image</button>
 
-        <!-- ② Search by specific date -->
+        <!-- Search by specific date -->
         <div class="date-search">
             <input type="date" id="dateInput" />
             <button id="loadByDate">📅 Search by Date</button>
@@ -34,11 +35,11 @@
 
         <!-- Search by date range -->
         <div class="range-search">
-            <label for="startDate">📆 Start Date:</label>
+            <label for="startDate">Start Date:</label>
             <input type="date" id="startDate" />
-            <label for="endDate">🗓️ End Date:</label>
+            <label for="endDate">End Date:</label>
             <input type="date" id="endDate" />
-            <button id="loadByRange">📂 Search by Date Range</button>
+            <button id="loadByRange">🗓️ Search by Date Range</button>
         </div>
         </section>
 
