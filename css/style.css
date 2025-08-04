@@ -1,0 +1,115 @@
+/* 基本設定 */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0b0c10, #1f2833);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+header {
+    background-color: #0b0c10;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #45a29e;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    color: #66fcf1;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+    color: #c5c6c7;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 検索UI */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.controls input,
+.controls button {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.controls input[type="date"],
+.controls input[type="number"] {
+    background: #c5c6c7;
+    color: #000;
+}
+
+.controls button {
+    background-color: #45a29e;
+    color: #0b0c10;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #66fcf1;
+}
+
+/* 結果出力 */
+#output {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* 各APODアイテム */
+.apod-card {
+    background-color: #1f2833;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #45a29e66;
+}
+
+.apod-card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.apod-card h2 {
+    color: #66fcf1;
+    margin-bottom: 0.5rem;
+}
+
+.apod-card p {
+    line-height: 1.5;
+    color: #c5c6c7;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #45a29e;
+}
+
+footer a {
+    color: #66fcf1;
+    text-decoration: none;
+}
