@@ -1,6 +1,5 @@
 const BASE_URL = "https://api.nasa.gov/planetary/apod";
-const API_KEY = "DEMO_KEY"; // user can register API key & use it instead of DEMO_KEY
-
+const API_KEY = "DEMO_KEY"; // NOTE: Replace "DEMO_KEY" with your own NASA API key to avoid rate limits (429 errors).
 const todayBtn = document.querySelector("#loadToday");
 const dateBtn = document.querySelector("#loadByDate");
 const randomBtn = document.querySelector("#loadRandom");
